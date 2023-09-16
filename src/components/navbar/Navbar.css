@@ -1,0 +1,88 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    padding: 10px 20px;
+}
+
+.menu {
+    display: none;
+}
+/* Logo styles */
+.main-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Navigation links */
+.nav-mid a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-mid a:hover {
+    color: #ffd700; 
+}
+
+.nav-right button {
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(73, 73, 244);
+}
+
+
+/* Get the App button */
+.nav-btn {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-mid {
+        margin-top: 10px;
+        line-height: 30px;
+        display: none;
+    }
+
+    .nav-mid a {
+        margin-right: 20px;
+        /* margin-left: 10px; */
+        margin-bottom: 10px;
+        line-height: 20px;
+    }
+    .nav-right {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menu-icon{
+        font-size: 25px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+}
+

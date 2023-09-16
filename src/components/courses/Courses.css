@@ -1,0 +1,64 @@
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses-left{
+    /* flex: 1; */
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+}
+
+
+.tag {
+    display: inline-block;
+    color: rgb(255, 106, 0);
+    background: rgb(240, 240, 180);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.courses-right{
+    /* flex: 1; */
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 550px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+}
+.courses-img img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.couser-logo img{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+    .courses{
+        display: flex;
+        flex-direction: column;
+    }
+    .courses-right{
+        display: none;
+    }
+    
+}

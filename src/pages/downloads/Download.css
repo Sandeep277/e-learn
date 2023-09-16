@@ -1,0 +1,166 @@
+.download {
+    margin-top: -50px;
+    position: relative;
+    z-index: -999;
+    height: max-content;
+    background: #242424;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.down-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.down-left {
+    line-height: 1.5;
+    color: lightgray;
+}
+
+.larg {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.larg a {
+    text-decoration: none;
+}
+
+.active-info {
+    display: flex;
+}
+
+.large-white {
+    color: #fff;
+    font-size: 43px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.active-users{
+    color: #fff;
+}
+
+.down-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.down-box {
+    height: 220px;
+    width: 250px;
+    background-color: #434343;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.box-contents {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-contents span {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box-contents{
+    color: lightgray;
+}
+
+.box-contents{
+    color: #fff;
+}
+
+.box-contents button {
+    padding: 8px 10px;
+    border-radius: 7px;
+    border: none;
+    background: blue;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.box-contents img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    padding: 4px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.down-box {
+    position: relative;
+}
+
+.box-logo {
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+}
+
+.cmp-logo {
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #242424;
+}
+
+.logo-height {
+    font-size: 60px;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .large-white {
+        font-size: 23px;
+    }
+
+    .active-info {
+        display: block;
+        /* flex-direction: row; */
+        /* background-color: red; */
+    }
+
+    .large-white {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .larg {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .download {
+        flex-direction: column;
+    }
+    .down-right {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .down-box{
+        margin-top: 25px;
+    }
+}

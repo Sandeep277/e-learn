@@ -1,0 +1,53 @@
+.single-testimonial {
+    font-display: row;
+    height: fit-content;
+    width: 700px;
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.5);
+    margin: 0 auto;
+}
+.user-ratings {
+    display: flex;
+    align-items: center;
+}
+.about-the-user img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-the-user {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.messages-text > p{
+    color: #797979;
+    font-size: large;
+    margin-top: 0;
+}
+
+
+.user-name{
+    margin-left: 15px;
+    line-height: 10px;
+    color: #797979;
+}
+.user-name > p {
+    margin-top: 0;
+}
+
+@media (max-width: 900px) {
+    .single-testimonial{
+        width: 500px;
+    }
+}
+@media (max-width: 700px) {
+    .single-testimonial{
+        width: 300px;
+    }
+}

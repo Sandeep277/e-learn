@@ -1,0 +1,17 @@
+.testimonial {
+    display: flex;
+    line-height: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* .testimonialbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+} */
+.testimonials {
+    background: #FBFBFB;
+}

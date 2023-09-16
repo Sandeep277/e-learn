@@ -1,0 +1,34 @@
+
+.costbox{
+    width: 400px;
+    /* border: 2px solid red; */
+    padding: 10px;
+    background: #F4F6F9;
+}
+.cost-logo {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background: #FFFFFF;
+    border-radius: 3px;
+}
+.timer {
+    font-size: 36px;
+    color: #9DC0FB;
+}
+
+.cost-text>p{
+    color: #838383;
+}
+
+@media (max-width: 700px) {
+    .costbox{
+        width: 350px;
+
+    }
+
+}
