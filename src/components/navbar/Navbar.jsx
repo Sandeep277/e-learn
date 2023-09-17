@@ -1,28 +1,44 @@
-import React from 'react'
-import './Navbar.css'
-import {AiOutlineMenu} from 'react-icons/ai'
-const Navbar = () => {
-    return (
-        <div className='navbar'>
-            <div className="nav-left">
-                <p><span className='main-logo'>E-Learn</span></p>
-            </div>
-            <div className="nav-mid">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">How It Works</a>
-                <a href="#">About</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Blog</a>
-            </div>
-            <div className="nav-right">
-                <button className='nab-btn'>Get the App</button>
-            </div>
-            <div className="menu">
-                <AiOutlineMenu className='menu-icon'/>
-            </div>
-        </div>
-    )
-}
+import React, { useState } from 'react';
+import './Navbar.css';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
 
-export default Navbar
+const Navbar = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
+  return (
+    <div className="navbar">
+      <div className="nav-left">
+        <p>
+          <span className="main-logo">E-Learn</span>
+        </p>
+      </div>
+      <div className={!isToggled ? `nav-mid` : `nav-hide`}>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#blog">Blog</a>
+      </div>
+      <div className="nav-right">
+        <button className="nab-btn">Get the App</button>
+      </div>
+      <div className="menu">
+        {!isToggled ? (
+          <AiOutlineMenu
+            className="menu-icon"
+            onClick={() => setIsToggled(!isToggled)}
+          />
+        ) : (
+          <GrClose
+            className="menu-icon"
+            onClick={() => setIsToggled(!isToggled)}
+          />
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

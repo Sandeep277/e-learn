@@ -8,14 +8,14 @@ const Hero = () => {
         <div className='hero'>
             <div className="hero-top">
                 <div className="hero-left">
-                    <div className="circle-text">round</div>
+                    <div className="circle-text"></div>
                 </div>
                 <div className='hero-mid'>
                     <h3>The Best Online Learing App</h3>
                     <p><span className="larg1">Your Ultimate online <a href="#">Learning</a> Solution!</span></p>
                 </div>
                 <div className="hero-right">
-                    <div className="circle-text">fjfk</div>
+                    <div className="circle-text"></div>
                 </div>
             </div>
             <div className="hero-bottom">
